@@ -1,0 +1,45 @@
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-family: $font-family-main;
+    font-weight: $font-weight;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    color: $color-text;
+    background-color: $color-background;
+    line-height: $line-height;
+    overflow-x: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: $color-text;
+    text-decoration: none;
+    line-height: $line-height;
+    transition: color 0.3s ease;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}

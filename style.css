@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: "Oxygen Mono", monospace;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  background-color: rgb(26, 26, 26);
+  line-height: normal;
+  overflow-x: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  line-height: normal;
+  transition: color 0.3s ease;
+}
+
+h2 {
+  font-size: 4rem;
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#hero h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: normal;
+}
+#hero a {
+  font-size: 6rem;
+  text-decoration: none;
+  color: #fff;
+}
+#hero a:hover {
+  color: red;
+}
+
+nav {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(40, 40, 40);
+  height: 7rem;
+}
+nav .ext-links, nav .int-links {
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+nav .ext-links img {
+  transition: height 0.3s ease;
+  margin-right: 2rem;
+  height: 5rem;
+}
+nav .int-links a {
+  transition: font-size 0.3s ease;
+  margin: 2rem;
+  font-size: 3rem;
+}
+nav .int-links a.active {
+  color: red;
+}
+
+#about {
+  padding: 8rem 2rem 0;
+  font-size: 1.5rem;
+}
+#about p {
+  margin: 4rem 15rem;
+}
+
+#skills {
+  margin: 10rem 0;
+  padding: 8rem 2rem 0;
+}
+#skills .skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem auto;
+}
+#skills .skills-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#skills .skills-row .skill {
+  transition: transform 0.3s ease-in-out;
+}
+#skills .skills-row .skill img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+#skills .skills-row .skill:hover {
+  transform: scale(1.5);
+}
+#skills .skills-row .skill::after {
+  content: attr(data-skill);
+  color: #fff;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+#skills .skills-row .skill:hover::after {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
