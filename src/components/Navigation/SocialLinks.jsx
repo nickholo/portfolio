@@ -7,14 +7,14 @@ const SocialLinks = () => (
             className='hidden'
             target='_blank'
         >
-            <img src='/assets/github-mark-white.svg' alt='Github logo'/>
+            <img src='assets/github-mark-white.svg' alt='Github logo'/>
         </Link>
         <Link
             to='https://www.linkedin.com/in/nick-hologroski'
             className='hidden'
             target='_blank'
         >
-            <img src='/assets/linkedin-icon.svg' alt='Linkedin logo'/>
+            <img src='assets/linkedin-icon.svg' alt='Linkedin logo'/>
         </Link>
     </div>
 )
