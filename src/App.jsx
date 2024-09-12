@@ -1,18 +1,17 @@
-import { Hero, Navbar, About, Skills, Projects, Contact } from './components'
-import '../style.css'
+import { Hero, Navbar, About, Skills, Contact, Footer } from './components'
 
 function App() {
   return (
-    <main>
+    <main className='bg-bg text-text'>
       <Hero/>
       <Navbar/>
       <About/>
       <Skills/>
       {/* <Projects/> */}
       {/* Make some projects to upload */}
-      <Contact/>  
+      <Contact/>
+      <Footer/>  
     </main>
-    
   )
 }
 
